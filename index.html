@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en" ng-app="SlAngular">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>SlAngular</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#/">Home</a></li>
+            <li><a href="#/about">About</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li>{{ $root.username }}</li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+      
+    </nav>
+    <div class="container" ui-view>
+      
+    </div>
+    <!-- Vendor -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/vendor/angular.min.js"></script>
+    <script src="js/vendor/angular-resource.min.js"></script>
+    <script src="js/vendor/angular-ui-router.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    
+    <!-- Module -->
+    <script src="js/app.js"></script>
+    
+    <!-- Controllers -->
+    <script src="js/controllers/oAuthController.js"></script>
+    <script src="js/controllers/mainController.js"></script>
+    
+    <!-- Services -->
+  </body>
+</html>
